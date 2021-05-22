@@ -31,7 +31,7 @@ export default function Header() {
 
     return(
 
-    <div className="bg-gradient-to-r from-light-red-400 to-light-red-500 boderblr relative">
+    <div className="bg-gradient-to-r from-light-red-400 to-light-red-500 boderblr">
         <div className="w-full relative  bg-auto bg-no-repeat bg-center boderblr bg-fixed z-50"
             style={{ height: '35rem', backgroundImage: 'url(' + bg + ')' }}>
             <div>
@@ -40,7 +40,7 @@ export default function Header() {
                     <div className="flex justify-between items-center">
                         <div className="flex space-x-10 items-center">
                             <img src={logo} className="w-24"/>
-                            <div className="hidden lg:block">
+                            <div className="hidden sm:block">
                                 <div className="flex space-x-10 items-center">
                                     <Dropdown title="Product">
                                         <DropdownItem title="Overview" route="#" />
@@ -63,7 +63,7 @@ export default function Header() {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden lg:block">
+                        <div className="hidden sm:block">
                             <div className="flex space-x-4">
                                 <button className="focus:outline-none bg-transparent  text-white font-semibold py-2 px-4 rounded hover:text-gray-100">
                                     Login
@@ -76,7 +76,7 @@ export default function Header() {
                         </div>
 
                         {/* mobile menu */}
-                        <div className="block lg:hidden">
+                        <div className="block sm:hidden">
                             <div className="">
                                     <HamburgerMenu
                                         isOpen={setActive}
@@ -91,40 +91,39 @@ export default function Header() {
                                     />
 
                                     {setActive &&
-
-                                        <div className="bg-white absolute left-0 top-24 shadow-2xl rounded-lg right-0  py-4 px-4   ml-4 mr-4 " style={{width:'21rem'}}>
+                                        <div className="bg-white fixed top-24 right-4 left-4  shadow-2xl rounded-lg   py-4 px-4   " >
+                                            <div>
+                                                <DropdownMobile title="Product">
+                                                    <DropdownItemMobile title="Overview" route="#" />
+                                                    <DropdownItemMobile title="Pricing" route="#" />
+                                                    <DropdownItemMobile title="Marketplace" route="#" />
+                                                    <DropdownItemMobile title="Features" route="#" />
+                                                    <DropdownItemMobile title="Integrations" route="#" />
+                                                </DropdownMobile>
+                                                <DropdownMobile title="Company">
+                                                    <DropdownItemMobile title="About" route="#" />
+                                                    <DropdownItemMobile title="Team" route="#" />
+                                                    <DropdownItemMobile title="Blog" route="#" />
+                                                    <DropdownItemMobile title="Careers" route="#" />
+                                                </DropdownMobile>
+                                                <DropdownMobile title="Connect">
+                                                    <DropdownItemMobile title="Contact" route="#" />
+                                                    <DropdownItemMobile title="Newsletter" route="#" />
+                                                    <DropdownItemMobile title="Linkedln" route="#" />
+                                                </DropdownMobile>
+                                            </div>
+                                            <div className="flex justify-center mt-10 border-t-2 py-4 ">
                                                 <div>
-                                                    <DropdownMobile title="Product">
-                                                        <DropdownItemMobile title="Overview" route="#" />
-                                                        <DropdownItemMobile title="Pricing" route="#" />
-                                                        <DropdownItemMobile title="Marketplace" route="#" />
-                                                        <DropdownItemMobile title="Features" route="#" />
-                                                        <DropdownItemMobile title="Integrations" route="#" />
-                                                    </DropdownMobile>
-                                                    <DropdownMobile title="Company">
-                                                        <DropdownItemMobile title="About" route="#" />
-                                                        <DropdownItemMobile title="Team" route="#" />
-                                                        <DropdownItemMobile title="Blog" route="#" />
-                                                        <DropdownItemMobile title="Careers" route="#" />
-                                                    </DropdownMobile>
-                                                    <DropdownMobile title="Connect">
-                                                        <DropdownItemMobile title="Contact" route="#" />
-                                                        <DropdownItemMobile title="Newsletter" route="#" />
-                                                        <DropdownItemMobile title="Linkedln" route="#" />
-                                                    </DropdownMobile>
-                                                </div>
-                                                <div className="flex justify-center mt-10 border-t-2 py-4 ">
-                                                    <div>
-                                                        <button
-                                                            className="text-lg focus:outline-none mb-6 bg-white text-dark-blue-600 font-semibold py-2 px-4 rounded-full flex items-center justify-center w-32">
-                                                            Login
-                                                        </button>
-                                                        <button
-                                                            className="text-lg focus:outline-none bg-gradient-to-r from-light-red-400 to-light-red-500 text-white font-semibold py-3 px-4 rounded-full flex items-center justify-center w-32">
-                                                            Sign Up
+                                                    <button
+                                                        className="text-lg focus:outline-none mb-6 bg-white text-dark-blue-600 font-semibold py-2 px-4 rounded-full flex items-center justify-center w-32">
+                                                        Login
                                                     </button>
-                                                    </div>
+                                                    <button
+                                                        className="text-lg focus:outline-none bg-gradient-to-r from-light-red-400 to-light-red-500 text-white font-semibold py-3 px-4 rounded-full flex items-center justify-center w-32">
+                                                        Sign Up
+                                                </button>
                                                 </div>
+                                            </div>
                                         </div>
                                     }
                             </div>
