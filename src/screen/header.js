@@ -40,7 +40,7 @@ export default function Header() {
                     <div className="flex justify-between items-center">
                         <div className="flex space-x-10 items-center">
                             <img src={logo} className="w-24"/>
-                            <div className="hidden sm:block">
+                            <div className="hidden lg:block">
                                 <div className="flex space-x-10 items-center">
                                     <Dropdown title="Product">
                                         <DropdownItem title="Overview" route="#" />
@@ -63,7 +63,7 @@ export default function Header() {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden sm:block">
+                        <div className="hidden lg:block">
                             <div className="flex space-x-4">
                                 <button className="focus:outline-none bg-transparent  text-white font-semibold py-2 px-4 rounded hover:text-gray-100">
                                     Login
@@ -76,7 +76,7 @@ export default function Header() {
                         </div>
 
                         {/* mobile menu */}
-                        <div className="block sm:hidden">
+                        <div className="block lg:hidden">
                             <div className="">
                                     <HamburgerMenu
                                         isOpen={setActive}

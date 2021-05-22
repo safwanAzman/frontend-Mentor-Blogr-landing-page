@@ -7,7 +7,7 @@ export default function Footer() {
 return (
     <div className="mt-16 bg-dark-gray-500 bodertlr py-8 px-4 md:px-16 w-full">
         <div className="flex justify-center md:justify-start">
-            <div className="grid grid-cols-12 gap-0 md:gap-20 ">
+            <div className="grid grid-cols-12 gap-0 md:gap-14 ">
                 <div className="col-span-12 sm:col-span-12 md:col-span-3 lg:col-span-3 xxl:col-span-3 py-4">
                     <img src={logo} className="w-24"/>
                 </div>

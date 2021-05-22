@@ -12,12 +12,12 @@ return (
                 <img src={img3} className="w-auto " style={{ height: '18rem' }} />
             </div>
             <div className="grid grid-cols-12 gap-1 py-14 px-8 ">
-                <div className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6">
+                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6">
                     <div className=" absolute -top-24 left-18 pb-12  hidden lg:block">
                         <img src={img3} className="w-auto " style={{ height: '37rem' }} />
                     </div>
                 </div>
-                <div className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 pt-24 lg:pt-12">
+                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 pt-24 lg:pt-12">
                     <div className="text-center lg:text-left">
                         <h1 className="fontbody text-white text-xl font-medium pb-4">State of art Infrastructure</h1>
                         <p className="text-white fontbody">

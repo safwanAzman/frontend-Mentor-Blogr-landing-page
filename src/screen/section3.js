@@ -5,13 +5,13 @@ export default function Section3() {
 return (
     <div className="pt-6 lg:pb-52 lg:pt-24 px-8 overflow-x-hidden overflow-y-hidden">
         <div className="grid grid-cols-12 gap-1  relative">
-            <div className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 hidden lg:block ">
+            <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 hidden lg:block ">
                 <img src={img4} className="w-auto absolute -top-20 -left-52" style={{ height: '40rem' }} />
             </div>
-            <div className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 ">
+            <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 ">
                 <div className="block lg:hidden">
                     <div className="flex justify-center">
-                        <img src={img4} className="w-auto h-72" />
+                        <img src={img4} className="w-auto h-96" />
                     </div>
                 </div>
                 <div className="pb-12 text-center lg:text-left">

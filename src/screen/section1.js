@@ -9,10 +9,10 @@ return(
             <h1 className="fontbody text-4xl text-dark-blue-500 font-medium text-center">Designed for the future</h1>
         </div>
         <div className="grid grid-cols-12 gap-1 py-12 lg:py-24 relative">
-            <div className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 pl-4 lg:pl-20">
+            <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 pl-4 lg:pl-20">
                 <div className="block lg:hidden">
                     <div className="flex justify-center pb-12">
-                        <img src={img2} className="w-auto h-72" />
+                        <img src={img2} className="w-auto h-96" />
                     </div>
                 </div>
                 <div className="pb-12 text-center lg:text-left">
@@ -39,7 +39,7 @@ return(
                 </div>
 
             </div>
-            <div className="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-6 xxl:col-span-6 hidden lg:block">
+            <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xxl:col-span-6 hidden lg:block">
                 <img src={img2} className="w-auto absolute -top-20 -right-52" style={{ height: '40rem' }} />
             </div>
         </div>
